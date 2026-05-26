@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Domínio profissional para médicos, advogados, psicólogos e engenheiros. Encontramos o domínio .br certo para sua carreira antes que alguém registre.">
+<meta name="keywords" content="domínio para advogado, domínio médico, adv.br, med.br, registro de domínio profissional, e-mail profissional médico">
+<title>QueroDominio.com.br — Seu Domínio Profissional .br</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #faf9f6;
+    --bg2: #f3f1ec;
+    --bg3: #eae7e0;
+    --accent: #1a4a2e;
+    --accent2: #2d6b45;
+    --accent-light: #e8f0eb;
+    --text: #1a1a18;
+    --muted: #6b6b66;
+    --border: rgba(26,26,24,0.1);
+    --card-bg: #ffffff;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 1.25rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+    background: rgba(250,249,246,0.92);
+    backdrop-filter: blur(12px);
+  }
+
+  .nav-logo {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .nav-logo span { color: var(--accent2); }
+
+  .nav-cta {
+    background: var(--accent);
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    padding: 0.5rem 1.25rem;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  .nav-cta:hover { background: var(--accent2); }
+
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8rem 2rem 4rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--accent-light);
+    border: 1px solid rgba(26,74,46,0.15);
+    color: var(--accent);
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.35rem 0.9rem;
+    border-radius: 100px;
+    margin-bottom: 2rem;
+    width: fit-content;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    animation: fadeUp 0.6s ease both;
+  }
+
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: clamp(2.8rem, 7vw, 5rem);
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    animation: fadeUp 0.6s ease 0.1s both;
+  }
+
+  h1 em {
+    font-style: italic;
+    color: var(--accent2);
+  }
+
+  .hero-sub {
+    margin-top: 1.75rem;
+    font-size: 1.15rem;
+    color: var(--muted);
+    max-width: 520px;
+    font-weight: 300;
+    line-height: 1.7;
+    animation: fadeUp 0.6s ease 0.2s both;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+    animation: fadeUp 0.6s ease 0.3s both;
+  }
+
+  .btn-primary {
+    background: var(--accent);
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.85rem 2rem;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-primary:hover { background: var(--accent2); transform: translateY(-1px); }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 0.85rem 2rem;
+    border-radius: 100px;
+    text-decoration: none;
+    border: 1px solid var(--border);
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+  .btn-secondary:hover { border-color: rgba(26,26,24,0.3); background: rgba(26,26,24,0.04); }
+
+  .hero-proof {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    animation: fadeUp 0.6s ease 0.4s both;
+    flex-wrap: wrap;
+  }
+
+  .proof-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--muted);
+  }
+
+  .proof-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--accent2);
+    flex-shrink: 0;
+  }
+
+  section { max-width: 900px; margin: 0 auto; padding: 5rem 2rem; }
+
+  .section-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent2);
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+
+  .section-desc {
+    color: var(--muted);
+    font-size: 1.05rem;
+    font-weight: 300;
+    max-width: 480px;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+  }
+
+  /* STEPS */
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .step { background: var(--card-bg); padding: 2rem 1.75rem; }
+
+  .step-num {
+    font-family: 'Fraunces', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgba(26,74,46,0.1);
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+
+  .step h3 { font-family: 'DM Sans', sans-serif; font-weight: 500; font-size: 1rem; margin-bottom: 0.5rem; color: var(--text); }
+  .step p { font-size: 0.875rem; color: var(--muted); line-height: 1.6; font-weight: 300; }
+
+  /* ESPECIALIDADES */
+  .esp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .esp-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  }
+
+  .esp-card:hover {
+    border-color: rgba(26,74,46,0.25);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 24px rgba(26,74,46,0.06);
+  }
+
+  .esp-icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
+  .esp-card h3 { font-weight: 500; font-size: 1rem; margin-bottom: 0.35rem; }
+  .esp-card p { font-size: 0.85rem; color: var(--muted); font-weight: 300; line-height: 1.6; }
+
+  .esp-ext {
+    display: inline-block;
+    margin-top: 0.75rem;
+    font-size: 0.75rem;
+    font-family: monospace;
+    background: var(--accent-light);
+    color: var(--accent);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    border: 1px solid rgba(26,74,46,0.15);
+  }
+
+  .also-label {
+    font-size: 0.8rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+    margin: 2.5rem 0 1rem;
+  }
+
+  .compact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 0.6rem;
+  }
+
+  .compact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.65rem 0.9rem;
+    transition: border-color 0.2s, background 0.2s;
+  }
+
+  .compact-item:hover {
+    border-color: rgba(26,74,46,0.25);
+    background: var(--accent-light);
+  }
+
+  .compact-icon { font-size: 1rem; flex-shrink: 0; }
+  .compact-info { min-width: 0; }
+
+  .compact-name {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .compact-ext {
+    font-size: 0.72rem;
+    font-family: monospace;
+    color: var(--accent2);
+    margin-top: 1px;
+  }
+
+  /* BENEFÍCIOS */
+  .benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .benefit {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .benefit-icon {
+    width: 40px; height: 40px;
+    border-radius: 10px;
+    background: var(--accent-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .benefit h3 { font-weight: 500; font-size: 0.95rem; margin-bottom: 0.25rem; }
+  .benefit p { font-size: 0.85rem; color: var(--muted); font-weight: 300; line-height: 1.5; }
+
+  .divider { border: none; border-top: 1px solid var(--border); max-width: 900px; margin: 0 auto; }
+
+  .cta-section {
+    text-align: center;
+    padding: 6rem 2rem;
+    background: var(--bg2);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .cta-section h2 { max-width: 500px; margin: 1rem auto; }
+  .cta-section p { color: var(--muted); max-width: 420px; margin: 1rem auto 2.5rem; font-weight: 300; }
+
+  .form-wrapper {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2.5rem;
+    max-width: 520px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .form-group { margin-bottom: 1.25rem; }
+  label { display: block; font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.5rem; }
+
+  input, select, textarea {
+    width: 100%;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    transition: border-color 0.2s;
+    outline: none;
+  }
+
+  input:focus, select:focus, textarea:focus { border-color: rgba(26,74,46,0.4); }
+  select option { background: var(--bg); }
+  textarea { resize: vertical; min-height: 100px; }
+
+  .form-submit {
+    width: 100%;
+    background: var(--accent);
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.9rem;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 0.5rem;
+  }
+
+  .form-submit:hover { background: var(--accent2); transform: translateY(-1px); }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer-logo { font-family: 'Fraunces', serif; font-weight: 700; font-size: 1rem; color: var(--text); }
+  .footer-logo span { color: var(--accent2); }
+  footer p { font-size: 0.8rem; color: var(--muted); }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  @media (max-width: 600px) {
+    nav { padding: 1rem 1.25rem; }
+    .hero { padding: 7rem 1.25rem 3rem; }
+    section { padding: 3.5rem 1.25rem; }
+    .form-wrapper { padding: 1.75rem 1.25rem; }
+    footer { padding: 1.5rem 1.25rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-logo">querodominio<span>.com.br</span></a>
+  <a href="#contato" class="nav-cta">Quero meu domínio</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-badge">Domínios .br para profissionais</div>
+  <h1>Seu nome.<br>Sua extensão.<br><em>Sua identidade.</em></h1>
+  <p class="hero-sub">
+    Encontramos o domínio profissional .br ideal para você — com o seu nome
+    na extensão exclusiva da sua área — antes que alguém registre.
+  </p>
+  <div class="hero-actions">
+    <a href="#contato" class="btn-primary">Encontrar meu domínio</a>
+    <a href="#como-funciona" class="btn-secondary">Como funciona</a>
+  </div>
+  <div class="hero-proof">
+    <div class="proof-item"><div class="proof-dot"></div>Extensões exclusivas por profissão</div>
+    <div class="proof-item"><div class="proof-dot"></div>E-mail profissional incluso</div>
+    <div class="proof-item"><div class="proof-dot"></div>Atendimento via WhatsApp</div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<section id="como-funciona">
+  <div class="reveal">
+    <div class="section-label">Como funciona</div>
+    <h2>Simples como<br>deve ser.</h2>
+    <p class="section-desc">
+      Você nos conta quem é. Nós encontramos o domínio certo. Você cuida dos seus pacientes e clientes.
+    </p>
+  </div>
+  <div class="steps reveal">
+    <div class="step">
+      <div class="step-num">01</div>
+      <h3>Você conta sua ideia</h3>
+      <p>Nos diz seu nome, profissão ou tipo de negócio. Uma conversa pelo WhatsApp já é suficiente.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <h3>Nós garimpamos por você</h3>
+      <p>Monitoramos diariamente os domínios .br sendo liberados e buscamos o que melhor combina com o que você nos contou.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <h3>Você recebe as opções</h3>
+      <p>Apresentamos as melhores opções com justificativa clara de por que cada uma faz sentido para você.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">04</div>
+      <h3>Você escolhe, nós registramos</h3>
+      <p>Cuidamos do registro e da configuração do e-mail profissional. Você sai com tudo funcionando.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="especialidades">
+  <div class="reveal">
+    <div class="section-label">Especialidades</div>
+    <h2>Para cada profissão,<br>a extensão certa.</h2>
+    <p class="section-desc">
+      Algumas extensões .br são exclusivas — só quem tem registro no conselho da área pode usar.
+      Isso significa que seu domínio comunica credibilidade desde o primeiro acesso.
+    </p>
+  </div>
+  <div class="esp-grid reveal">
+    <div class="esp-card">
+      <div class="esp-icon">⚖️</div>
+      <h3>Advogados</h3>
+      <p>Exclusiva para inscritos na OAB. Seu nome na extensão da advocacia brasileira.</p>
+      <span class="esp-ext">.adv.br</span>
+    </div>
+    <div class="esp-card">
+      <div class="esp-icon">🩺</div>
+      <h3>Médicos</h3>
+      <p>Reservada para registrados no CRM. A identidade digital que seus pacientes merecem ver.</p>
+      <span class="esp-ext">.med.br</span>
+    </div>
+    <div class="esp-card">
+      <div class="esp-icon">🧠</div>
+      <h3>Psicólogos</h3>
+      <p>Restrita a inscritos no CRP. O domínio que transmite confiança antes da primeira consulta.</p>
+      <span class="esp-ext">.psi.br</span>
+    </div>
+    <div class="esp-card">
+      <div class="esp-icon">🏗️</div>
+      <h3>Engenheiros</h3>
+      <p>Exclusiva para registrados no CREA. Posicione sua marca com autoridade técnica.</p>
+      <span class="esp-ext">.eng.br</span>
+    </div>
+    <div class="esp-card">
+      <div class="esp-icon">🦷</div>
+      <h3>Dentistas</h3>
+      <p>Restrita a inscritos no CRO. Um domínio que seus pacientes vão lembrar e confiar.</p>
+      <span class="esp-ext">.odo.br</span>
+    </div>
+    <div class="esp-card">
+      <div class="esp-icon">🏢</div>
+      <h3>Empresas</h3>
+      <p>Para negócios de todos os tamanhos. Encontramos nomes disponíveis com histórico real.</p>
+      <span class="esp-ext">.com.br</span>
+    </div>
+  </div>
+
+  <div class="also-label reveal">Também atendemos</div>
+  <div class="compact-grid reveal">
+    <div class="compact-item">
+      <div class="compact-icon">📐</div>
+      <div class="compact-info">
+        <div class="compact-name">Arquitetos</div>
+        <div class="compact-ext">.arq.br</div>
+      </div>
+    </div>
+    <div class="compact-item">
+      <div class="compact-icon">🏛️</div>
+      <div class="compact-info">
+        <div class="compact-name">Administradores</div>
+        <div class="compact-ext">.adm.br</div>
+      </div>
+    </div>
+    <div class="compact-item">
+      <div class="compact-icon">🐾</div>
+      <div class="compact-info">
+        <div class="compact-name">Veterinários</div>
+        <div class="compact-ext">.vet.br</div>
+      </div>
+    </div>
+    <div class="compact-item">
+      <div class="compact-icon">👩‍⚕️</div>
+      <div class="compact-info">
+        <div class="compact-name">Enfermeiros</div>
+        <div class="compact-ext">.enf.br</div>
+      </div>
+    </div>
+    <div class="compact-item">
+      <div class="compact-icon">💊</div>
+      <div class="compact-info">
+        <div class="compact-name">Farmacêuticos</div>
+        <div class="compact-ext">.far.br</div>
+      </div>
+    </div>
+    <div class="compact-item">
+      <div class="compact-icon">📰</div>
+      <div class="compact-info">
+        <div class="compact-name">Jornalistas</div>
+        <div class="compact-ext">.jor.br</div>
+      </div>
+    </div>
+    <div class="compact-item">
+      <div class="compact-icon">🌱</div>
+      <div class="compact-info">
+        <div class="compact-name">ONGs</div>
+        <div class="compact-ext">.ong.br</div>
+      </div>
+    </div>
+    <div class="compact-item">
+      <div class="compact-icon">🏛️</div>
+      <div class="compact-info">
+        <div class="compact-name">Organizações</div>
+        <div class="compact-ext">.org.br</div>
+      </div>
+    </div>
+    <div class="compact-item">
+      <div class="compact-icon">📺</div>
+      <div class="compact-info">
+        <div class="compact-name">Televisão</div>
+        <div class="compact-ext">.tv.br</div>
+      </div>
+    </div>
+    <div class="compact-item">
+      <div class="compact-icon">📻</div>
+      <div class="compact-info">
+        <div class="compact-name">Rádio / FM</div>
+        <div class="compact-ext">.radio.br · .fm.br</div>
+      </div>
+    </div>
+    <div class="compact-item">
+      <div class="compact-icon">📱</div>
+      <div class="compact-info">
+        <div class="compact-name">Aplicativos</div>
+        <div class="compact-ext">.app.br</div>
+      </div>
+    </div>
+    <div class="compact-item">
+      <div class="compact-icon">💻</div>
+      <div class="compact-info">
+        <div class="compact-name">Tecnologia</div>
+        <div class="compact-ext">.tec.br</div>
+      </div>
+    </div>
+    <div class="compact-item">
+      <div class="compact-icon">👨‍💻</div>
+      <div class="compact-info">
+        <div class="compact-name">Desenvolvedores</div>
+        <div class="compact-ext">.dev.br</div>
+      </div>
+    </div>
+    <div class="compact-item">
+      <div class="compact-icon">🤖</div>
+      <div class="compact-info">
+        <div class="compact-name">Inteligência Artificial</div>
+        <div class="compact-ext">.ia.br</div>
+      </div>
+    </div>
+    <div class="compact-item">
+      <div class="compact-icon">👤</div>
+      <div class="compact-info">
+        <div class="compact-name">Pessoa física</div>
+        <div class="compact-ext">.nom.br</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="beneficios">
+  <div class="reveal">
+    <div class="section-label">Por que importa</div>
+    <h2>Mais do que um<br>endereço na internet.</h2>
+    <p class="section-desc">
+      Seu domínio profissional é o primeiro contato que um paciente ou cliente tem com você online.
+    </p>
+  </div>
+  <div class="benefits reveal">
+    <div class="benefit">
+      <div class="benefit-icon">✉️</div>
+      <div>
+        <h3>E-mail profissional</h3>
+        <p>Saia do Gmail. Tenha um e-mail com seu nome e sua extensão profissional — muito mais credível.</p>
+      </div>
+    </div>
+    <div class="benefit">
+      <div class="benefit-icon">🔒</div>
+      <div>
+        <h3>Extensão exclusiva</h3>
+        <p>Ninguém sem registro no seu conselho pode ter um .adv.br ou .med.br. É uma barreira de credibilidade.</p>
+      </div>
+    </div>
+    <div class="benefit">
+      <div class="benefit-icon">⚡</div>
+      <div>
+        <h3>Antes que alguém registre</h3>
+        <p>Monitoramos diariamente os domínios sendo liberados. Quando o seu nome aparecer, você sabe primeiro.</p>
+      </div>
+    </div>
+    <div class="benefit">
+      <div class="benefit-icon">🎯</div>
+      <div>
+        <h3>Nome certo, não qualquer nome</h3>
+        <p>Não entregamos uma lista genérica. Analisamos fonética, memorabilidade e identidade antes de apresentar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="cta-section">
+  <div class="reveal">
+    <div class="section-label" style="justify-content:center; display:flex;">Fale conosco</div>
+    <h2>Qual é o seu nome<br>na internet?</h2>
+    <p>Conte quem você é e o que busca. Encontramos o domínio certo — com e-mail profissional incluso.</p>
+  </div>
+  <div class="form-wrapper reveal">
+    <form onsubmit="handleSubmit(event)">
+      <div class="form-group">
+        <label for="nome">Seu nome completo</label>
+        <input type="text" id="nome" placeholder="Dr. João Silva" required>
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail atual</label>
+        <input type="email" id="email" placeholder="joao@gmail.com" required>
+      </div>
+      <div class="form-group">
+        <label for="profissao">Profissão</label>
+        <select id="profissao">
+          <option value="">Selecione...</option>
+          <option>Advogado(a)</option>
+          <option>Médico(a)</option>
+          <option>Psicólogo(a)</option>
+          <option>Engenheiro(a)</option>
+          <option>Dentista</option>
+          <option>Arquiteto(a)</option>
+          <option>Veterinário(a)</option>
+          <option>Farmacêutico(a)</option>
+          <option>Enfermeiro(a)</option>
+          <option>Empresa / Negócio</option>
+          <option>Outro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="mensagem">O que você busca?</label>
+        <textarea id="mensagem" placeholder="Ex: sou advogada tributarista em São Paulo, quero um domínio com meu nome para usar no e-mail e no cartão de visita..."></textarea>
+      </div>
+      <button type="submit" class="form-submit">Quero meu domínio →</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">querodominio<span>.com.br</span></div>
+  <p>Domínios profissionais .br · contato@expirados.com.br</p>
+  <p style="width:100%; text-align:center; margin-top:0.5rem;">© 2025 QueroDominio.com.br — Todos os direitos reservados</p>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('.form-submit');
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const profissao = document.getElementById('profissao').value;
+    const mensagem = document.getElementById('mensagem').value;
+    const whatsapp = '5500000000000';
+    const texto = `Olá! Vim pelo querodominio.com.br.\n\nNome: ${nome}\nE-mail: ${email}\nProfissão: ${profissao}\n\nO que busco: ${mensagem}`;
+    const url = `https://wa.me/${whatsapp}?text=${encodeURIComponent(texto)}`;
+    btn.textContent = 'Redirecionando para WhatsApp...';
+    btn.style.opacity = '0.7';
+    setTimeout(() => window.open(url, '_blank'), 500);
+    setTimeout(() => { btn.textContent = 'Quero meu domínio →'; btn.style.opacity = '1'; e.target.reset(); }, 2000);
+  }
+</script>
+</body>
+</html>
